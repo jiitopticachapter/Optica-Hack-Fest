@@ -32,7 +32,7 @@ We welcome all kinds of contributions including bug fixes, feature enhancements,
    git checkout -b feature-or-bugfix-name
    ```
 
-4. Make your changes or improvements (check Issues for the tasks).
+4. Make your changes or improvements and create folder with name `Task_name_Your_github_userName` (check Issues for the tasks).
 
 5. **Commit your changes** using the Conventional Commits format (explained below).
 
