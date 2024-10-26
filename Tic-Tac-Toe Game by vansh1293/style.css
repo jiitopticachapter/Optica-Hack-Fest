@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playwrite+AR:wght@100..400&family=Teko:wght@300..700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+.image
+{
+    height:100vh;
+    width:100vw;
+    position: absolute;
+}
+.image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+}
+.welcome{
+    height: 20vh;
+    font-size: 50px;
+    font-weight: bolder;
+    color:cadetblue;
+    font-family: "Anton", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1;
+}
+.input{
+    position: relative;
+    z-index: 1;
+    color:cadetblue;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    flex-direction: column;
+    gap: 50px;
+}
+#name1{
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid cadetblue;
+    color: antiquewhite;
+    outline: none;
+    margin-left: 10px;
+    text-align: center;
+    padding: 0;
+}
+#name2{
+    text-align: center;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid cadetblue;
+    color: antiquewhite;
+    outline: none;
+    margin-left: 10px;
+    padding: 0;
+}
+.input div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+.btn{
+    position: relative;
+    z-index: 1;
+    height: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    border: none;
+    border-radius: 7px;
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: "Anton", sans-serif;
+    background-color: rgb(156, 211, 213);
+}
+@media only screen and (max-width:810px)
+{
+    .input div{
+        flex-direction: column;
+        gap: 20px;
+    }   
+    .welcome{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width:554px)
+{
+    .input{
+        font-size: 25px;
+    }
+    #name1{
+        font-size: 25px;
+    }
+    #name2{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:462px)
+{
+    .welcome{
+        font-size: 25px;
+    }
+    .input{
+        font-size: 20px;
+    }
+    #name1{
+        font-size: 20px;
+    }
+    #name2{
+        font-size: 20px;
+    }
+}
