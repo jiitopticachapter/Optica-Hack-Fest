@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+
+.calculator {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-night-mode, .clear-history {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-night-mode:hover, .clear-history:hover {
+    background-color: #555;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+body.night-mode {
+    background-color: #2c2c2c;
+}
+
+body.night-mode .calculator {
+    background: #3c3c3c;
+    color: white;
+}
+
+body.night-mode #display {
+    background: #555;
+    color: white;
+    border: 1px solid #666;
+}
+
+body.night-mode button {
+    background-color: #444;
+    color: white;
+}
+
+body.night-mode button:hover {
+    background-color: #666;
+}
+
+.history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.history h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history li {
+    background: #f4f4f4;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+body.night-mode .history li {
+    background: #555;
+    border: 1px solid #666;
+}
