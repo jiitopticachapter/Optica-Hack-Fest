@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleSwitch = document.getElementById('mode-toggle');
     
-    // Load user preference from local storage
+
     const currentMode = localStorage.getItem('theme') || 'light';
     
     if (currentMode === 'dark') {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleSwitch.checked = false;
     }
     
-    // Event listener for toggle switch
+
     toggleSwitch.addEventListener('change', () => {
         if (toggleSwitch.checked) {
             document.body.classList.replace('light-mode', 'dark-mode');
