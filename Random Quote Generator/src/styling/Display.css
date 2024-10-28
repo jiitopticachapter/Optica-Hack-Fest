@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+:root {
+    --gradient-start: #ff7e5f;
+    --gradient-end: #feb47b;
+}
+
+body {
+    /* background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); */
+    background: linear-gradient(90deg, #3d3772, #9b2a4e);
+    min-height: 100vh;
+    margin: 0;
+    transition: 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    :root {
+        --gradient-start: #ff9966;
+        --gradient-end: #ff5e62;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --gradient-start: #c62fda;
+        --gradient-end: #0d2acd;
+    }
+}
+
+.DispContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+
+    margin: 20px;
+}
+
+
+
+.quote {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #faf9f9;
+}
+
+/* From Uiverse.io by Spacious74 */
+.buttonC {
+    font-size: 1.4em;
+    padding: 0.6em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000000b4;
+}
+
+.buttonContainer {
+    position: relative;
+    padding: 3px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    border-radius: 0.9em;
+    transition: all 0.4s ease;
+}
+
+.buttonContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 0.9em;
+    z-index: -10;
+    filter: blur(0);
+    transition: filter 0.4s ease;
+}
+
+.buttonContainer:hover::before {
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    filter: blur(1.2em);
+}
+
+.buttonContainer:active::before {
+    filter: blur(0.2em);
+}
+
+.home {
+    color: lightblue;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+a {
+    transition: 0.2s ease;
+}
+
+a:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.45);
+
+
+}
