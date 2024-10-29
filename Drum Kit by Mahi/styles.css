@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  background-color: #061920;
+}
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+}
+.set {
+  margin: 10% auto;
+  height: 40%;
+  width: 50%;
+}
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+.red {
+  color: red;
+}
+.drum {
+  outline: none;
+  border: 10px solid #0b191f;
+  font-size: 2rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #1f0833;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+@media(max-width:1000px){
+  .drum{
+  width: 350px;
+  height: 200px;
+text-align: center;
+margin: 10px 10px 10px 323px;
+    display: block;
+  }
+}
