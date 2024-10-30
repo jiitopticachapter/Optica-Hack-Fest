@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quizContainer {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+#quiz{
+   
+    flex-direction: column;
+    font-size: 18px;
+}
+
+#start{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(224, 224, 237);
+    cursor: pointer;
+}
+
+#options{
+    display: flex;
+    flex-direction: column;
+}
+.option{
+display: block;
+margin:15px;
+background-color: #f0f0f0;
+border-radius: 5px;
+color: green;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+
+.option:hover {
+    background-color: #acb6ac; /* Light green on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+
+#question{
+    font-size: 24px;
+    font-weight: bold;
+    color:#333;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center align the text */
+}
+
+#start{
+    background-color: rgb(165, 165, 168);
+    font-weight:bolder;
+    border-radius: 3px;
+    transition: background-color 0.3s,transform 0.2s;
+}
+
+
+
+#score-container {
+    display: none;
+    text-align: center;
+    margin: 20px;
+}
+
+#score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+#score:hover {
+    transform: scale(1.05);
+    background-color: #e8f5e9;
+}
+
+#start {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#start:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
