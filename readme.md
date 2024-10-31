@@ -110,7 +110,8 @@ We expect all contributors to follow our [Code of Conduct](CODE_OF_CONDUCT.md) t
 
 ## Contact
 
-For any questions or issues, feel free to [open an issue](https://github.com/jiitopticachapter/Optica-Hack-Fest/issues) or contact us directly.
+For any questions or issues, feel free to [open an issue](https://github.com/jiitopticachapter/Optica-Hack-Fest/issues) or contact us directly at goyalaryan51@gmail.com
 
 ---
 # Happy coding and thank you for your contribution!
+## - Aryan Goyal (Techincal Head)
