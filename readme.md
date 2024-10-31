@@ -114,4 +114,4 @@ For any questions or issues, feel free to [open an issue](https://github.com/jii
 
 ---
 # Happy coding and thank you for your contribution!
-# Aryan Goyal (Techincal Head)
+## - Aryan Goyal (Techincal Head)
